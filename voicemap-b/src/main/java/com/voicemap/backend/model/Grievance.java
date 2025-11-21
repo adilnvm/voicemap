@@ -29,6 +29,31 @@ public class Grievance {
 
     private String status = "open";
 
+
+
+
+
+        // inside Grievance class - add these fields
+    private String regionPcId;
+    private String regionAcId;
+    private String regionDistrictId;
+    private String regionStateId;
+
+    // getters & setters
+    public String getRegionPcId() { return regionPcId; }
+    public void setRegionPcId(String regionPcId) { this.regionPcId = regionPcId; }
+
+    public String getRegionAcId() { return regionAcId; }
+    public void setRegionAcId(String regionAcId) { this.regionAcId = regionAcId; }
+
+    public String getRegionDistrictId() { return regionDistrictId; }
+    public void setRegionDistrictId(String regionDistrictId) { this.regionDistrictId = regionDistrictId; }
+
+    public String getRegionStateId() { return regionStateId; }
+    public void setRegionStateId(String regionStateId) { this.regionStateId = regionStateId; }
+
+
+
     @CreatedDate
     private Instant createdAt = Instant.now();
 

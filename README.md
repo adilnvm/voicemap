@@ -9,6 +9,12 @@ to know more or **to contribute contact me**
 [adilnvm](https://github.com/adilnvm)
 
 
+# Frontend Setup - 29 Indian States and 543 PC Layer established and working Search Bar
+
+<img width="443" height="440" alt="Search Bar showing Relabvant results" src="https://github.com/user-attachments/assets/8424f7f2-f413-4dba-ab26-3d9d4cbf805c" />
+<img width="443" height="440" alt="Overview view of Indian Subcontinent with States layers visible with Hover Functioanlity" src="https://github.com/user-attachments/assets/1722e33a-9d8d-4260-9da3-aaa56ef3f86b" />
+<img width="879" height="635" alt="Parliamentary Constituency (PC) layers among Indian states" src="https://github.com/user-attachments/assets/15e45025-a876-4810-a1f5-c288cfabf21e" />
+
 ---
 
 ## Executive Summary

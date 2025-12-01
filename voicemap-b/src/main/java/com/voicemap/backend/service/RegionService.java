@@ -64,6 +64,10 @@ public class RegionService {
         return matches;
     }
 
+    public Optional<Region> findOneByTypeAndName(String type, String name) {
+        return regionRepository.findByTypeAndNameIgnoreCase(type, name);
+    }
+
     private double approxArea(Region r) {
         if (r.getBbox() != null && r.getBbox().length == 4) {
             double w = r.getBbox()[2] - r.getBbox()[0];
@@ -74,5 +78,7 @@ public class RegionService {
     }
 
     public List<Region> getAllRegions() {
+        return regionRepository.findAll();
     }
+
 }

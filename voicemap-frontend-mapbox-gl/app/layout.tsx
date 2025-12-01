@@ -11,14 +11,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="bg-slate-50 min-h-screen">
-        <NavBar
+        {/* <NavBar
         // onReset={handleReset}
         // onToggleSidebar={() => setPanelOpen((s) => !s)}
         // showStates={showStates}
         // showPCs={showPCs}
         // setShowStates={setShowStates}
         // setShowPCs={setShowPCs}
-      />
+      /> */}
         <div className="max-w-full">
           {children}
         </div>

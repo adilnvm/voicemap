@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  mongo:
+    image: mongo:6.0
+    container_name: voicemap_mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - voicemap_mongo_data:/data/db
+      - ./mongo-init:/docker-entrypoint-initdb.d:ro
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: voicemap
+      MONGO_INITDB_ROOT_PASSWORD: secret
+      MONGO_INITDB_DATABASE: voicemapdb
+
+volumes:
+  voicemap_mongo_data:

@@ -43,6 +43,12 @@ public class PincodeController {
         return ResponseEntity.ok(res);
     }
 
+    @GetMapping("/prefix/{prefix}")
+    public ResponseEntity<List<Pincode>> prefix(@PathVariable String prefix, @RequestParam(value="limit", required=false, defaultValue="8") int limit) {
+        return ResponseEntity.ok(service.searchPrefix(prefix, limit));
+    }
+
+
     // Optional: import endpoint to upload the GeoJSON file (multipart).
     // Accepts the format you described. Field 'file'.
     @PostMapping("/import")
